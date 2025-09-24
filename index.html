@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Котячі анімації</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/image.png">
+</head>
+<body>
+
+  <!-- 1. Листівка з ефектом fade-in -->
+  <section class="postcard">
+    <h2>Моя листівка</h2>
+    <div class="fade-in">
+      <img src="images/image2.jpg" alt="Листівка" width="300">
+    </div>
+  </section>
+
+  <!-- 2. Емблема -->
+  <section>
+    <h2>Емблема</h2>
+    <div class="emblem-container">
+      <img src="images/emblena.svg" alt="Емблема" class="emblem">
+    </div>
+  </section>
+
+  <!-- 3. Котик біжить -->
+  <section>
+    <h2>Котик біжить</h2>
+    <div class="runner-stage">
+      <img src="images/cat-run.png" alt="Cat run" class="cat-run">
+    </div>
+  </section>
+
+  <!-- 4. Лапка, що махає (клікни, щоб помахала) -->
+  <section>
+    <h2>Котяча лапка</h2>
+    <div class="paw-stage">
+      <img src="images/cat-paw.png" alt="Cat paw" class="cat-paw">
+    </div>
+  </section>
+
+  <!-- 5. Сплячий котик із Z -->
+  <section>
+    <h2>Сонний котик</h2>
+    <div class="cat-sleep">
+      <img src="images/cat-sleep.png" alt="Sleeping cat">
+      <div class="sleep-zz">
+        <span>Z</span><span>Z</span><span>Z</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // клік по лапці додає/знімає клас wave
+    document.querySelector('.cat-paw').addEventListener('click', e => {
+      e.target.classList.toggle('wave');
+    });
+  </script>
+</body>
+</html>
